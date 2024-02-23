@@ -1,0 +1,13 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$_CountModels _$$_CountModelsFromJson(Map<String, dynamic> json) =>
+    _$_CountModels(
+      count: json['count'] as int?,
+    );
+
+Map<String, dynamic> _$$_CountModelsToJson(_$_CountModels instance) =>
+    <String, dynamic>{
+      'count': instance.count,
+    };

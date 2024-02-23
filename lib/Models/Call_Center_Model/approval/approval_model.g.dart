@@ -1,0 +1,111 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'approval_model.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$_ApproveOrderModel _$$_ApproveOrderModelFromJson(Map<String, dynamic> json) =>
+    _$_ApproveOrderModel(
+      vat: (json['vat'] as num?)?.toDouble(),
+      total: (json['total'] as num?)?.toDouble(),
+      loading: json['loading'] as bool?,
+      orderId: json['order_id'] as int?,
+      vatableAmount: (json['vatable_amount'] as num?)?.toDouble(),
+      unitCost: (json['unit_cost'] as num?)?.toDouble(),
+      sellingPrice: (json['selling_price'] as num?)?.toDouble(),
+      reasonApprovalObject: json['reason_of_approval_reject'] as String?,
+      lines: (json['lines'] as List<dynamic>?)
+          ?.map((e) => ApproveLinesModel.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$_ApproveOrderModelToJson(
+        _$_ApproveOrderModel instance) =>
+    <String, dynamic>{
+      'vat': instance.vat,
+      'total': instance.total,
+      'loading': instance.loading,
+      'order_id': instance.orderId,
+      'vatable_amount': instance.vatableAmount,
+      'unit_cost': instance.unitCost,
+      'selling_price': instance.sellingPrice,
+      'reason_of_approval_reject': instance.reasonApprovalObject,
+      'lines': instance.lines,
+    };
+
+_$_ApproveLinesModel _$$_ApproveLinesModelFromJson(Map<String, dynamic> json) =>
+    _$_ApproveLinesModel(
+      vat: (json['vat'] as num?)?.toDouble(),
+      amount: (json['amount'] as num?)?.toDouble(),
+      quantity: json['quantity'] as int?,
+      lineId: json['line_id'] as int?,
+      oldQuantity: json['old_quantity'] as int?,
+      vatableAmount: (json['vatable_amount'] as num?)?.toDouble(),
+      unitCost: (json['unit_cost'] as num?)?.toDouble(),
+      variantName: json['variant_name'] as String?,
+      variantId: json['variant_id'] as int?,
+      sellingPrice: (json['selling_price'] as num?)?.toDouble(),
+      totalAmount: (json['total_amount'] as num?)?.toDouble(),
+      reasonApprovalObject: json['reason_of_approval_reject'] as String?,
+      isApproved: json['is_approved'] as bool? ?? false,
+      approvalStatus: json['approval_status'] as String?,
+      isActive: json['is_active'] as bool? ?? false,
+    );
+
+Map<String, dynamic> _$$_ApproveLinesModelToJson(
+        _$_ApproveLinesModel instance) =>
+    <String, dynamic>{
+      'vat': instance.vat,
+      'amount': instance.amount,
+      'quantity': instance.quantity,
+      'line_id': instance.lineId,
+      'old_quantity': instance.oldQuantity,
+      'vatable_amount': instance.vatableAmount,
+      'unit_cost': instance.unitCost,
+      'variant_name': instance.variantName,
+      'variant_id': instance.variantId,
+      'selling_price': instance.sellingPrice,
+      'total_amount': instance.totalAmount,
+      'reason_of_approval_reject': instance.reasonApprovalObject,
+      'is_approved': instance.isApproved,
+      'approval_status': instance.approvalStatus,
+      'is_active': instance.isActive,
+    };
+
+_$_ApproveListModel _$$_ApproveListModelFromJson(Map<String, dynamic> json) =>
+    _$_ApproveListModel(
+      id: json['id'] as int?,
+      total: (json['total'] as num?)?.toDouble(),
+      notes: json['notes'] as String?,
+      remarks: json['remarks'] as String?,
+      orderCode: json['order_code'] as String?,
+      orderDate: json['ordered_date'] as String?,
+      cutsomerCode: json['customer_code'] as String?,
+      customerName: json['customer_name'] as String?,
+      customerTrnNumber: json['customer_trn_number'] as String?,
+      orderStatus: json['order_satus'] as String?,
+      paymentStatus: json['payment_status'] as String?,
+      deliveryAddress: json['delivery_address'] as String?,
+      inVoiceStatus: json['invoice_status'] as String?,
+      isActive: json['is_active'] as bool? ?? false,
+    );
+
+Map<String, dynamic> _$$_ApproveListModelToJson(_$_ApproveListModel instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'total': instance.total,
+      'notes': instance.notes,
+      'remarks': instance.remarks,
+      'order_code': instance.orderCode,
+      'ordered_date': instance.orderDate,
+      'customer_code': instance.cutsomerCode,
+      'customer_name': instance.customerName,
+      'customer_trn_number': instance.customerTrnNumber,
+      'order_satus': instance.orderStatus,
+      'payment_status': instance.paymentStatus,
+      'delivery_address': instance.deliveryAddress,
+      'invoice_status': instance.inVoiceStatus,
+      'is_active': instance.isActive,
+    };
